@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: opc-ai-video-studio
+    runtime: static
+    repo: https://github.com/clicksuitedotcom/opc-ai-video-studio
+    branch: main
+    buildCommand: ""
+    staticPublishPath: .
+    pullRequestPreviewsEnabled: false
+    headers:
+      - path: /*
+        name: Cache-Control
+        value: public, max-age=300
