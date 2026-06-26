@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OPC AI Video Studio</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237c5cff'/%3E%3Cpath d='M17 41V23h11c5 0 9 4 9 9s-4 9-9 9H17zm18 0V23h12v6h-6v12h-6z' fill='white'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="./styles.css?v=8" />
+  </head>
+  <body class="home-active">
+    <section class="homepage" id="homepage">
+      <header class="home-nav">
+        <div class="brand">
+          <div class="brand-mark">OP</div>
+          <div>
+            <strong>OPC Studio</strong>
+            <span>AI Drama Pipeline</span>
+          </div>
+        </div>
+        <nav class="home-links" aria-label="首页导航">
+          <a href="#homeFlow">流程</a>
+          <a href="#homeCapabilities">能力</a>
+          <a href="#homeProduction">制作线</a>
+          <a href="#homeAudience">场景</a>
+        </nav>
+        <div class="home-auth">
+          <button class="ghost-button auth-enter" type="button"><span class="button-icon icon-user" aria-hidden="true"></span>登录</button>
+          <button class="primary-button auth-enter" type="button"><span class="button-icon icon-plus" aria-hidden="true"></span>注册</button>
+        </div>
+      </header>
+
+      <main class="home-hero">
+        <section class="hero-copy">
+          <p class="eyebrow">AI Video Studio for OPC</p>
+          <h1>
+            <span>一个人，也能跑完</span>
+            <span>AI 短剧生产线</span>
+          </h1>
+          <p class="hero-lede">面向 one person company 的 AI 视频制作工作台。把项目定义、剧本创作、素材准备、分镜生成和合成发布串成一条可追踪的生产线。</p>
+          <div class="hero-actions">
+            <button class="primary-button auth-enter" type="button"><span class="button-icon icon-arrow" aria-hidden="true"></span>开始创作</button>
+            <button class="secondary-button auth-enter" type="button"><span class="button-icon icon-grid" aria-hidden="true"></span>查看演示工作台</button>
+          </div>
+          <div class="hero-proof">
+            <span>支持 Seedance / Kling / Runway</span>
+            <span>剧本自动拆分镜</span>
+            <span>素材一致性管理</span>
+            <span>成本与队列可控</span>
+          </div>
+          <div class="hero-metrics">
+            <span><strong>5</strong><small>步生产链路</small></span>
+            <span><strong>4</strong><small>AI 视频模型</small></span>
+            <span><strong>1</strong><small>人也能协作</small></span>
+          </div>
+        </section>
+
+        <section class="home-stage" id="homePreview" aria-label="产品预览">
+          <div class="stage-window">
+            <div class="stage-toolbar">
+              <span></span>
+              <span></span>
+              <span></span>
+              <strong>佐藤爱情故事 · Preview</strong>
+            </div>
+            <div class="stage-media">
+              <div class="stage-shot main-shot"></div>
+              <div class="stage-shot side-shot"></div>
+              <div class="stage-card floating-a">
+                <strong>剧本已拆 3 场</strong>
+                <span>自动抽取角色、场景、对白</span>
+              </div>
+              <div class="stage-card floating-b">
+                <strong>Seedance Ready</strong>
+                <span>分镜批量生成队列</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <section class="home-flow" id="homeFlow">
+        <article>
+          <span>01</span>
+          <strong>项目定义</strong>
+          <p>目标、画幅、风格、模型和预算。</p>
+        </article>
+        <article>
+          <span>02</span>
+          <strong>剧本创作</strong>
+          <p>大纲、场次、对白和剧情节奏。</p>
+        </article>
+        <article>
+          <span>03</span>
+          <strong>素材准备</strong>
+          <p>角色、场景、道具和音色。</p>
+        </article>
+        <article>
+          <span>04</span>
+          <strong>分镜生成</strong>
+          <p>镜头提示词和批量视频生成。</p>
+        </article>
+        <article id="homeModels">
+          <span>05</span>
+          <strong>合成发布</strong>
+          <p>时间线、字幕、配音和导出。</p>
+        </article>
+      </section>
+
+      <section class="home-content" id="homeCapabilities">
+        <div class="content-heading">
+          <p class="eyebrow">What it solves</p>
+          <h2>不是一个生成按钮，而是一条完整制作线</h2>
+          <p>OPC 创作者最缺的不是灵感，而是把脚本、素材、模型参数和视频片段稳定组织起来的工作台。</p>
+        </div>
+        <div class="capability-grid">
+          <article>
+            <span>Script OS</span>
+            <h3>剧本作为生产中枢</h3>
+            <p>从故事大纲抽取角色、场景、对白和节奏点，直接映射到素材准备和分镜生成。</p>
+          </article>
+          <article>
+            <span>Asset Memory</span>
+            <h3>素材一致性管理</h3>
+            <p>角色、场景、道具和音色集中维护，避免每条分镜都重新描述一遍。</p>
+          </article>
+          <article>
+            <span>Batch Render</span>
+            <h3>分镜批量生成</h3>
+            <p>按剧本场次批量生成镜头，保留模型、时长、画幅和成本配置。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="production-map" id="homeProduction" aria-label="制作线地图">
+        <div class="map-intro">
+          <p class="eyebrow">Production map</p>
+          <h2>剧本、素材、分镜和成片不再各管各的</h2>
+          <p>每一步都保留结构化结果。项目目标影响剧本风格，剧本自动提出素材需求，素材被分镜引用，最终合成继承镜头、字幕和音色。</p>
+        </div>
+        <div class="map-board">
+          <article>
+            <span>01 / Brief</span>
+            <strong>项目定义</strong>
+            <p>题材、受众、画幅、风格、模型和预算先被锁定。</p>
+          </article>
+          <article>
+            <span>02 / Script</span>
+            <strong>剧本创作</strong>
+            <p>大纲拆成场次、对白、情绪节奏和素材清单。</p>
+          </article>
+          <article>
+            <span>03 / Assets</span>
+            <strong>素材准备</strong>
+            <p>角色、场景、道具、音色统一建档，供镜头复用。</p>
+          </article>
+          <article>
+            <span>04 / Shots</span>
+            <strong>分镜生成</strong>
+            <p>每条分镜绑定素材、提示词、模型、时长和消耗。</p>
+          </article>
+          <article>
+            <span>05 / Publish</span>
+            <strong>合成发布</strong>
+            <p>视频片段、字幕、配音和封面进入同一条时间线。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="ops-section" aria-label="模型与成本控制">
+        <div class="ops-copy">
+          <p class="eyebrow">Model operations</p>
+          <h2>把创意自由和生产控制放在同一个界面</h2>
+        </div>
+        <div class="ops-grid">
+          <article>
+            <span>Model router</span>
+            <strong>按镜头选择模型</strong>
+            <p>叙事镜头走 Seedance，产品镜头走更稳定的图生视频模型，避免全项目一刀切。</p>
+          </article>
+          <article>
+            <span>Cost guard</span>
+            <strong>预算先行</strong>
+            <p>在批量生成前显示预计消耗、并发数量和失败重试，让一人团队也能控成本。</p>
+          </article>
+          <article>
+            <span>Review loop</span>
+            <strong>可追溯返工</strong>
+            <p>每个视频片段保留原始剧本、素材引用和提示词，返工时不用从头猜。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="audience-section" id="homeAudience">
+        <div>
+          <p class="eyebrow">Built for small teams</p>
+          <h2>适合短剧、漫剧、广告样片和产品视频</h2>
+        </div>
+        <div class="audience-list">
+          <article>
+            <strong>AI 短剧创作者</strong>
+            <span>从小说/剧情梗概快速拆成镜头。</span>
+          </article>
+          <article>
+            <strong>个人品牌与知识 IP</strong>
+            <span>把口播、案例和故事做成连续视频。</span>
+          </article>
+          <article>
+            <strong>产品营销 OPC</strong>
+            <span>用统一素材批量测试广告创意。</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="home-cta" aria-label="进入产品">
+        <p class="eyebrow">Start with a script</p>
+        <h2>今天就把第一条 AI 短剧拆成镜头</h2>
+        <p>登录后进入编辑态，先完成项目定义，再让剧本驱动素材、分镜和合成。</p>
+        <div class="hero-actions">
+          <button class="primary-button auth-enter" type="button"><span class="button-icon icon-arrow" aria-hidden="true"></span>进入编辑态</button>
+          <button class="secondary-button auth-enter" type="button"><span class="button-icon icon-grid" aria-hidden="true"></span>打开示例项目</button>
+        </div>
+      </section>
+
+      <footer class="home-footer">
+        <span>OPC Studio</span>
+        <span>Project Definition / Script / Assets / Storyboard / Compose</span>
+      </footer>
+    </section>
+
+    <div class="app-shell editor-hidden" id="editorApp">
+      <aside class="sidebar" aria-label="主导航">
+        <div class="brand">
+          <div class="brand-mark">OP</div>
+          <div>
+            <strong>OPC Studio</strong>
+            <span>AI Drama Pipeline</span>
+          </div>
+        </div>
+
+        <button class="team-card" type="button" aria-label="切换协作团队">
+          <span class="team-kicker">Workspace</span>
+          <strong>测试团队</strong>
+          <span class="team-subtitle">AI 视频协作小组</span>
+          <span class="team-members" aria-label="团队成员">
+            <span class="avatar lead">你</span>
+            <span class="avatar">编</span>
+            <span class="avatar">剪</span>
+          </span>
+          <span class="team-foot">
+            <span>3 人在线</span>
+            <span aria-hidden="true">⌄</span>
+          </span>
+        </button>
+
+        <nav class="nav-list">
+          <span class="nav-label">创作</span>
+          <button class="nav-item active" data-view="projects" type="button"><span>01</span>项目定义</button>
+          <button class="nav-item" data-view="screenplay" type="button"><span>02</span>剧本创作</button>
+          <button class="nav-item" data-view="materials" type="button"><span>03</span>素材准备</button>
+          <button class="nav-item" data-view="storyboard" type="button"><span>04</span>分镜生成</button>
+          <button class="nav-item" data-view="compose" type="button"><span>05</span>合成发布</button>
+          <span class="nav-label">企业配置</span>
+          <button class="nav-item" data-view="settings" type="button"><span>06</span>模型与 Key</button>
+          <button class="nav-item" data-view="usage" type="button"><span>07</span>用量统计</button>
+        </nav>
+
+        <div class="credit-card">
+          <span>剩余额度</span>
+          <strong>129.84 万点</strong>
+          <button type="button">购买</button>
+        </div>
+      </aside>
+
+      <main class="workspace">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Current Production</p>
+            <h1>佐藤爱情故事</h1>
+            <div class="project-meta">
+              <span>16:9</span>
+              <span>1080p</span>
+              <span>Doubao-Seedance-2.0</span>
+              <span>剧本已拆 3 场</span>
+            </div>
+          </div>
+          <div class="topbar-actions">
+            <label class="search">
+              <span aria-hidden="true">Search</span>
+              <input id="searchInput" type="search" placeholder="搜索项目、角色、场景或道具" />
+            </label>
+            <button class="secondary-button logout-button" id="logoutBtn" type="button"><span class="button-icon icon-exit" aria-hidden="true"></span>退出工作台</button>
+            <button class="icon-button" id="themeToggle" type="button" aria-label="切换主题"><span class="button-icon icon-theme" aria-hidden="true"></span></button>
+            <button class="primary-button" id="newProjectBtn" type="button"><span class="button-icon icon-plus" aria-hidden="true"></span>创建项目</button>
+          </div>
+        </header>
+
+        <section class="studio-summary" aria-label="制作概览">
+          <div class="summary-main">
+            <span class="status-dot"></span>
+            <div>
+              <strong>今日生产队列</strong>
+              <p>项目定义、剧本段落、素材准备、分镜和合成时间线已关联。</p>
+            </div>
+          </div>
+          <div class="summary-metrics">
+            <span><strong>92%</strong>角色一致性</span>
+            <span><strong>2.48k</strong>预计消耗</span>
+            <span><strong>4</strong>并发任务</span>
+          </div>
+        </section>
+
+        <section class="workflow-strip" aria-label="制作步骤">
+          <button class="workflow-step active" data-step="projects" type="button">
+            <span>1</span>
+            <strong>项目定义</strong>
+            <small>目标、画幅、风格、预算</small>
+          </button>
+          <button class="workflow-step" data-step="screenplay" type="button">
+            <span>2</span>
+            <strong>剧本创作</strong>
+            <small>大纲、场次、对白、节奏</small>
+          </button>
+          <button class="workflow-step" data-step="materials" type="button">
+            <span>3</span>
+            <strong>素材准备</strong>
+            <small>角色、场景、道具、音色</small>
+          </button>
+          <button class="workflow-step" data-step="storyboard" type="button">
+            <span>4</span>
+            <strong>分镜生成</strong>
+            <small>镜头、提示词、批量视频</small>
+          </button>
+          <button class="workflow-step" data-step="compose" type="button">
+            <span>5</span>
+            <strong>合成发布</strong>
+            <small>时间线、字幕、导出</small>
+          </button>
+        </section>
+
+        <section class="view active" id="projectsView">
+          <div class="section-head">
+            <div>
+              <h2>项目定义</h2>
+              <p>先确定视频目标、题材、画幅、模型和预算，再进入剧本创作。</p>
+            </div>
+            <div class="filters">
+              <button class="chip active" type="button">全部</button>
+              <button class="chip" type="button">创作中</button>
+              <button class="chip" type="button">可合成</button>
+            </div>
+          </div>
+          <div class="project-grid" id="projectGrid"></div>
+        </section>
+
+        <section class="view" id="materialsView">
+          <div class="project-titlebar">
+            <div>
+              <h2>素材资产库</h2>
+              <p>剧本确定后准备角色、场景、道具和音色，让分镜生成保持一致。</p>
+            </div>
+            <div class="segmented">
+              <button class="active" data-material-filter="all" type="button">全部</button>
+              <button data-material-filter="角色" type="button">角色</button>
+              <button data-material-filter="场景" type="button">场景</button>
+              <button data-material-filter="道具" type="button">道具</button>
+            </div>
+          </div>
+          <div class="material-toolbar">
+            <button class="secondary-button" id="addMaterialBtn" type="button"><span class="button-icon icon-plus" aria-hidden="true"></span>新增素材</button>
+            <button class="primary-button" id="batchAssetBtn" type="button"><span class="button-icon icon-stack" aria-hidden="true"></span>批量生成素材</button>
+          </div>
+          <div class="material-sections" id="materialSections"></div>
+        </section>
+
+        <section class="view" id="screenplayView">
+          <div class="storyboard-header">
+            <div>
+              <h2>剧本工作台</h2>
+              <p>剧本承接项目定义，并向素材准备、分镜、字幕、旁白和合成时间线输出结构化内容。</p>
+            </div>
+            <div class="model-control">
+              <button class="secondary-button" id="syncAssetsBtn" type="button"><span class="button-icon icon-sync" aria-hidden="true"></span>同步素材</button>
+              <button class="primary-button" id="breakdownScriptBtn" type="button"><span class="button-icon icon-split" aria-hidden="true"></span>拆解为分镜</button>
+            </div>
+          </div>
+
+          <section class="ai-script-panel" aria-label="AI 生成剧本">
+            <div class="ai-script-copy">
+              <p class="eyebrow">AI Script Generator</p>
+              <h3>从一句故事种子生成可拆分的短剧剧本</h3>
+              <p>生成结果会自动写入剧本编辑器，并同步刷新场次、素材引用和分镜草稿。</p>
+              <div class="api-mini-status" id="scriptApiStatus">
+                <span class="status-dot"></span>
+                <strong>Mock API Ready</strong>
+                <small>/api/script/generate</small>
+              </div>
+            </div>
+            <form class="script-generator-form" id="scriptGeneratorForm">
+              <label>
+                故事标题
+                <input id="scriptTitleInput" type="text" value="佐藤爱情故事" autocomplete="off" />
+              </label>
+              <label>
+                题材类型
+                <select id="scriptGenreInput">
+                  <option>都市情感短剧</option>
+                  <option>AI 漫剧反转</option>
+                  <option>产品故事广告</option>
+                  <option>知识 IP 口播故事</option>
+                </select>
+              </label>
+              <label>
+                剧本长度
+                <select id="scriptLengthInput">
+                  <option value="3">3 场 / 35 秒</option>
+                  <option value="5">5 场 / 60 秒</option>
+                  <option value="8">8 场 / 90 秒</option>
+                </select>
+              </label>
+              <label>
+                叙事风格
+                <select id="scriptToneInput">
+                  <option>克制现实感</option>
+                  <option>高反转爽感</option>
+                  <option>温柔治愈</option>
+                  <option>悬疑压迫</option>
+                </select>
+              </label>
+              <label class="wide">
+                角色设定
+                <input id="characterBriefInput" type="text" value="sato 是中年办公室大叔，miko 是年轻女孩，两人因为合作项目相遇。" autocomplete="off" />
+              </label>
+              <label class="wide">
+                故事种子
+                <textarea id="storySeedInput">一个疲惫的中年男人在办公室收到年轻女孩递来的合作企划，两人从城市走到原野，最后在车内面对真实的选择。</textarea>
+              </label>
+              <div class="generator-actions">
+                <button class="secondary-button" id="refineScriptBtn" type="button"><span class="button-icon icon-sync" aria-hidden="true"></span>优化当前剧本</button>
+                <button class="primary-button" id="generateScriptBtn" type="submit"><span class="button-icon icon-stack" aria-hidden="true"></span>AI 生成剧本</button>
+              </div>
+            </form>
+          </section>
+
+          <div class="screenplay-grid">
+            <aside class="script-map">
+              <h3>项目关联</h3>
+              <div class="link-chain" aria-label="剧本生产链路">
+                <span>项目定义</span>
+                <strong>剧本</strong>
+                <span>素材准备</span>
+                <span>分镜</span>
+                <span>合成</span>
+              </div>
+              <div class="script-facts">
+                <span><strong>3</strong>场次</span>
+                <span><strong>2</strong>主角</span>
+                <span><strong>5</strong>素材引用</span>
+                <span><strong>35s</strong>预计成片</span>
+              </div>
+            </aside>
+
+            <section class="script-editor-panel">
+              <div class="script-editor-head">
+                <div>
+                  <h3>短剧剧本</h3>
+                  <p>从这里维护故事逻辑，分镜会继承场景、角色和对白。</p>
+                </div>
+                <span class="status">已关联素材</span>
+              </div>
+              <textarea id="scriptEditor" aria-label="剧本编辑器">《佐藤爱情故事》
+
+场次 01｜办公室｜白天
+sato 坐在窗边办公，电脑屏幕上的数据让他皱起眉头。miko 推门进来，递给他一份新的合作企划。
+
+场次 02｜原野｜黄昏
+miko 和 sato 走到木屋旁，远处有一只鸭子穿过草地。两人第一次谈起离开城市后的生活。
+
+场次 03｜汽车内部｜夜晚
+两人在车内发生争执，sato 试图解释项目失败的原因，miko 沉默地看向窗外。</textarea>
+            </section>
+
+            <aside class="script-inspector">
+              <h3>自动抽取</h3>
+              <div class="extract-group">
+                <span class="extract-label">角色</span>
+                <button type="button">sato</button>
+                <button type="button">miko</button>
+              </div>
+              <div class="extract-group">
+                <span class="extract-label">场景</span>
+                <button type="button">办公室</button>
+                <button type="button">原野</button>
+                <button type="button">汽车内部</button>
+              </div>
+              <div class="extract-group">
+                <span class="extract-label">输出</span>
+                <button type="button">分镜提示词</button>
+                <button type="button">字幕草稿</button>
+                <button type="button">旁白节奏</button>
+              </div>
+            </aside>
+          </div>
+
+          <div class="scene-list" id="sceneList"></div>
+        </section>
+
+        <section class="view" id="storyboardView">
+          <div class="storyboard-header">
+            <div>
+              <h2>分镜和批量生成</h2>
+              <p>为每个镜头绑定角色、场景、道具和模型，适合短剧、漫剧、广告脚本。</p>
+            </div>
+            <div class="model-control">
+              <label>
+                AI 模型
+                <select id="modelSelect">
+                  <option>Doubao-Seedance-2.0</option>
+                  <option>Seedance Pro Fast</option>
+                  <option>Kling 2.1</option>
+                  <option>Runway Gen-4</option>
+                </select>
+              </label>
+              <button class="primary-button" id="batchGenerateBtn" type="button"><span class="button-icon icon-stack" aria-hidden="true"></span>批量生成视频</button>
+            </div>
+          </div>
+          <div class="shot-list" id="shotList"></div>
+        </section>
+
+        <section class="view" id="composeView">
+          <div class="compose-grid">
+            <div class="compose-main">
+              <div class="player-panel">
+                <div class="mock-player">
+                  <div class="play-icon">▶</div>
+                  <div class="player-caption" id="playerCaption">第 1 镜：办公室相遇</div>
+                </div>
+                <div class="player-tools">
+                  <button class="icon-button" type="button" aria-label="播放"><span class="button-icon icon-play" aria-hidden="true"></span></button>
+                  <input type="range" min="0" max="100" value="38" aria-label="播放进度" />
+                  <span>00:11 / 00:35</span>
+                </div>
+              </div>
+              <div class="timeline" id="timeline"></div>
+            </div>
+            <aside class="compose-panel">
+              <h2>合成设置</h2>
+              <div class="render-score">
+                <strong>Ready</strong>
+                <span>镜头、字幕、音色和素材引用完整</span>
+              </div>
+              <label>画幅
+                <select>
+                  <option>16:9 横屏</option>
+                  <option>9:16 竖屏</option>
+                  <option>1:1 方屏</option>
+                </select>
+              </label>
+              <label>清晰度
+                <select>
+                  <option>1080p</option>
+                  <option>720p</option>
+                  <option>4K</option>
+                </select>
+              </label>
+              <label class="toggle-row">
+                <input type="checkbox" checked />
+                自动字幕
+              </label>
+              <label class="toggle-row">
+                <input type="checkbox" checked />
+                统一角色一致性
+              </label>
+              <button class="primary-button full" id="composeBtn" type="button"><span class="button-icon icon-export" aria-hidden="true"></span>合成成片</button>
+              <div class="export-status" id="exportStatus">等待合成</div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="view placeholder-view" id="settingsView">
+          <h2>模型与 API Key</h2>
+          <p>配置 Seedance、Doubao、Kling、Runway 等模型的密钥、默认参数和额度策略。</p>
+          <div class="settings-grid">
+            <label>默认模型<select><option>Doubao-Seedance-2.0</option><option>Seedance Pro Fast</option></select></label>
+            <label>默认时长<select><option>5s</option><option>8s</option><option>10s</option></select></label>
+            <label>生成并发<input type="number" value="4" min="1" max="12" /></label>
+            <label>API Key<input type="password" placeholder="sk-..." /></label>
+          </div>
+          <div class="api-contract-panel">
+            <div class="section-head compact">
+              <div>
+                <h3>后台接口状态</h3>
+                <p>当前使用本地 Mock API，接口路径和响应结构已按真实后端预留。</p>
+              </div>
+              <button class="secondary-button" id="checkApiBtn" type="button"><span class="button-icon icon-sync" aria-hidden="true"></span>检查接口</button>
+            </div>
+            <div class="api-endpoints" id="apiEndpoints"></div>
+          </div>
+        </section>
+
+        <section class="view placeholder-view" id="usageView">
+          <h2>用量统计</h2>
+          <p>按项目、模型和成员查看生成消耗，帮助 OPC 控制内容生产成本。</p>
+          <div class="usage-bars">
+            <span style="--value: 72%">Seedance 72%</span>
+            <span style="--value: 46%">Doubao 46%</span>
+            <span style="--value: 28%">Kling 28%</span>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="./api.js?v=1"></script>
+    <script src="./app.js?v=6"></script>
+  </body>
+</html>
