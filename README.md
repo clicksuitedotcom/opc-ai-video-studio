@@ -26,6 +26,16 @@ python3 -m http.server 4173
 
 然后访问 `http://127.0.0.1:4173/`。
 
+## Render 部署
+
+项目已包含 `render.yaml`，可以作为 Render Blueprint 部署为静态站点。
+
+部署入口：
+
+[Deploy to Render](https://dashboard.render.com/blueprint/new?repo=https%3A%2F%2Fgithub.com%2Fclicksuitedotcom%2Fopc-ai-video-studio)
+
+部署后 Render 会生成一个类似 `https://opc-ai-video-studio.onrender.com` 的公网地址，不依赖本机运行。
+
 ## 后台接口契约
 
 当前版本是可演示的静态原型，后台由 `api.js` 提供 Mock API。后续接真实服务时，保持以下方法和响应结构即可平滑替换：
